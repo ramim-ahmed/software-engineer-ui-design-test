@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap");
+/* base styles */
 @tailwind base;
 @layer base {
   body {
@@ -6,5 +7,28 @@
     font-family: "Inter", sans-serif;
   }
 }
+
+/* simplifying tailwindcss class */
 @tailwind components;
+@layer components {
+  .navbar {
+    @apply bg-white px-5 sm:px-0 h-16 flex items-center shadow;
+  }
+  .navbar-container {
+    @apply container mx-auto flex justify-between items-center;
+  }
+
+  .sidebar {
+    @apply w-1/6 pt-4 px-4 space-y-3 flex flex-col text-left border-r border-gray-500 h-screen border-opacity-10;
+  }
+
+  .checkbox {
+    @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  }
+
+  .select-element {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+    focus:outline-none block w-full p-2.5;
+  }
+}
 @tailwind utilities;

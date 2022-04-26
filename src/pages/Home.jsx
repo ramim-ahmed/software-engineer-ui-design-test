@@ -2,13 +2,13 @@ import React from 'react';
 import Contents from '../components/Contents';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-const Home = () => {
+const Home = ({data}) => {
   return (
     <main>
        <Navbar brand='Starbucks' />
       <div className='flex'>
         <Sidebar />
-        <Contents />
+        <Contents data={data}/>
       </div>
     </main>
   )

@@ -4,7 +4,7 @@ import { BsGear } from "react-icons/bs";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi";
 const Sidebar = () => {
   return (
-    <div className="w-1/6 pt-4 px-4 space-y-3 flex flex-col text-left border-r border-gray-500 h-screen border-opacity-10">
+    <div className="sidebar">
       <SidebarContent title='Dashboard' icon={<AiOutlineHome size={25} />} />
       <SidebarContent title='Inventory' icon={<AiOutlineFileText size={25} />} active/>
       <SidebarContent title='Documents' icon={<HiOutlineDocumentDuplicate size={25} />} />

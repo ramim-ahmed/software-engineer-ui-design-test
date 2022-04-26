@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "date": "11 Nov 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Alright",
+    "quantity": "200/300",
+    "unit_price": 10,
+    "amount": 2000
+  },
+  {
+    "id": 2,
+    "date": "10 Nov 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Alright",
+    "quantity": "122/230",
+    "unit_price": 10,
+    "amount": 1220
+  },
+  {
+    "id": 3,
+    "date": "6 Nov 2021",
+    "title": "Hammer",
+    "details": "Wood plan will be used to do woodworks, duh",
+    "status": "In Progress",
+    "quantity": "100/300",
+    "unit_price": 10,
+    "amount": 2000
+  },
+  {
+    "id": 4,
+    "date": "28 oct 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Out Of Stock",
+    "quantity": "0/200",
+    "unit_price": 10,
+    "amount": 0.0
+  },
+  {
+    "id": 5,
+    "date": "22 oct 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Out Of Stock",
+    "quantity": "0/200",
+    "unit_price": 10,
+    "amount": 0.0
+  },
+  {
+    "id": 6,
+    "date": "16 oct 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Out Of Stock",
+    "quantity": "0/200",
+    "unit_price": 10,
+    "amount": 0.0
+  },
+  {
+    "id": 7,
+    "date": "11 Nov 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Alright",
+    "quantity": "200/300",
+    "unit_price": 10,
+    "amount": 2000
+  },
+  {
+    "id": 8,
+    "date": "11 Nov 2021",
+    "title": "Hammer",
+    "details": "This is a hammer to do work with",
+    "status": "Alright",
+    "quantity": "200/300",
+    "unit_price": 10,
+    "amount": 2000
+  }
+]
