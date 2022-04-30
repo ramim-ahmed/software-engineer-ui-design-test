@@ -1,7 +1,6 @@
 import React from "react";
 import TableFooter from "./TableFooter";
 import TableRow from "./TableRow";
-
 const Table = ({ data }) => {
   return (
     <div className="relative overflow-x-auto bg-white table-wrapper">

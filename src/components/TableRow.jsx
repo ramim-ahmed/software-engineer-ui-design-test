@@ -27,7 +27,7 @@ const TableRow = ({row}) => {
               {details}
             </td>
             <td className="px-6 py-4 flex items-center">
-                <span className='hidden md:block md:mr-3 '>{status}</span> <span className={` w-1.5 h-1.5 rounded-full ${status === 'Alright' ? 'bg-primary':'bg-blue-500'} ${status === 'In Progress' ? ' bg-warning':'bg-blue-500'} ${status === 'Out Of Stock' ? 'bg-error':'bg-blue-500'} `} ></span>
+                <span className='hidden md:block md:mr-3 '>{status}</span> <span className={` w-1.5 h-1.5 rounded-full ${status === 'Alright' ? 'bg-primary':'bg-primary'} ${status === 'In Progress' ? ' bg-warning':'bg-primary'} ${status === 'Out Of Stock' ? 'bg-error':'bg-primary'} `} ></span>
             </td>
             <td className="px-6 py-4 font-semibold ">{quantity}</td>
             <td className="px-6 py-4 unit-price ">${unit_price}</td>
