@@ -6,7 +6,7 @@ const TableFooter = () => {
       <div>
       <select
         id="countries"
-        className="select-element"
+        className="select-element hidden sm:block "
       >
         <option selected>10 Items per page</option>
         <option value="10">10 Items per page</option>
@@ -18,7 +18,7 @@ const TableFooter = () => {
       <div className="flex">
       <select
         id="countries"
-        class="select-element"
+        className="select-element"
       >
         <option selected>Page 1 of 5</option>
         <option value="1">Page 1 of 5</option>

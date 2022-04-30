@@ -1,27 +1,20 @@
 import React from "react";
 import { AiOutlineFileText, AiOutlineHome } from "react-icons/ai";
 import { BsGear } from "react-icons/bs";
-import { HiOutlineDocumentDuplicate } from "react-icons/hi";
+import SidebarContent from "./SidebarContent";
 const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <SidebarContent title='Dashboard' icon={<AiOutlineHome size={25} />} />
-      <SidebarContent title='Inventory' icon={<AiOutlineFileText size={25} />} active/>
-      <SidebarContent title='Documents' icon={<HiOutlineDocumentDuplicate size={25} />} />
-      <SidebarContent title='Settings' icon={<BsGear size={25} />} />
-    </div>
+    <aside aria-label="Sidebar">
+      <div className="sidebar_wrapper">
+        <ul className="space-y-2 flex items-center sm:flex-col sm:items-start ">
+         <SidebarContent icon={ <AiOutlineHome size={25} />} title='Dashboard' />
+         <SidebarContent icon={ <AiOutlineFileText size={25} />} title='Inventory'active />
+         <SidebarContent icon={ <AiOutlineFileText size={25} />} title='Documents'  />
+         <SidebarContent icon={ <BsGear size={25} />} title='Settings' />
+        </ul>
+      </div>
+    </aside>
   );
 };
 
 export default Sidebar;
-
-const SidebarContent = ({ title, icon, active }) => {
-  return (
-    <div>
-     <button className={active === true ? ' bg-white w-full text-left p-2 rounded-md shadow' : 'p-2 text-neutral_7'}>
-     
-      <p className="flex items-center space-x-3"><span className={`${active === true ? 'text-primary': ''}`}>{icon}</span><span className={`${active === true ? 'text-primary': ''} hidden md:block `}>{title}</span></p>
-     </button>
-    </div>
-  );
-};

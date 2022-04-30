@@ -6,11 +6,13 @@ const Navbar = ({ brand }) => {
   return (
     <div className="navbar">
       <nav className="navbar-container">
-        <div className="w-1/5 flex items-center">
+        <div className="w-1/6 flex items-center">
+          {/* brand section */}
         <p className=" font-medium">{brand}</p>
         <span className="ml-2"><FaCaretDown /></span>
         </div>
-        <div className=" flex items-center w-4/5 ml-3">
+        {/* search box */}
+        <div className="sm:flex items-center w-4/6 ml-9 hidden ">
         <div className=" bg-neutral_2 text-neutral_8 p-3 rounded-l-md "> <FaSearch/></div>
           <input
             className="px-2 w-3/5 p-2 rounded-r-md bg-neutral_2 focus:outline-0"
@@ -18,7 +20,8 @@ const Navbar = ({ brand }) => {
             placeholder="Search"
           />
         </div>
-        <div className="flex items-center justify-end w-2/5 space-x-4">
+        {/* profile section */}
+        <div className="flex items-center justify-end sm:w-2/5 w-3/5 space-x-4">
           <span>
             <IoIosNotificationsOutline className=" text-neutral_8" size={30} />
           </span>

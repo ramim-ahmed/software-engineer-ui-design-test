@@ -15,20 +15,34 @@
     @apply bg-white px-5 sm:px-0 h-16 flex items-center shadow;
   }
   .navbar-container {
-    @apply container mx-auto flex justify-between items-center;
+    @apply container mx-auto flex justify-between items-center px-3;
   }
 
-  .sidebar {
-    @apply w-1/6 pt-4 px-4 space-y-3 flex flex-col text-left border-r border-gray-500 h-screen border-opacity-10;
-  }
-
-  .checkbox {
-    @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  .sidebar_wrapper {
+    @apply bg-white sm:bg-background  py-4 px-3 fixed bottom-0 z-50 sm:top-16 sm:w-20 lg:w-60 md:w-20 w-full border-r border-gray-300;
   }
 
   .select-element {
     @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-    focus:outline-none block w-full p-2.5;
+    focus:outline-none block w-full p-2;
   }
 }
 @tailwind utilities;
+
+/* custom css */
+
+@media (max-width: 550px) {
+  .checkBox,
+  .date,
+  .details,
+  .unit-price {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .details,
+  .unit-price {
+    display: none;
+  }
+}
